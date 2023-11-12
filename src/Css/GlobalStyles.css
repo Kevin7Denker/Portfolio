@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap');
+
+:root {
+  --background-color: white;
+  --primary-color: #eee;
+  --secndary-color: black;
+  --main-title: ;
+  --sub-title: ;
+  --main-text: ;
+  --sub-text: ;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #666;
+}
+
+*::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 0 10px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+header {
+  max-width: 100svw;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  padding: 0; 
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50%;
+  height: 8svh;
+  justify-content: space-around;
+  position: relative;
+}
+
+a{
+  text-decoration: none;
+  color: var(--secndary-color);
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  list-style-type: none;
+  display: flex;
+}
+
+li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+}
+
+footer {
+}

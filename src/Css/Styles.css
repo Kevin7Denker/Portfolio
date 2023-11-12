@@ -1,0 +1,363 @@
+#Top {
+  display: none; 
+  position: fixed; 
+  bottom: 20px; 
+  right: 30px; 
+  z-index: 99; 
+  border: none; 
+  outline: none; 
+  background-color: red; 
+  color: white; 
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px; 
+  font-size: 18px; 
+}
+
+#Top:hover {
+  background-color: #555; 
+}
+
+.icon-nav a {
+  padding: 1rem;
+  font-size: 2em;
+  font-weight: 700;
+  font-family: "Castoro Titling", serif;
+  cursor: pointer;
+}
+
+.links-nav {
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+
+.links-nav a {
+  color: var(--secndary-color);
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+  position: relative;
+  padding: 5px 0;
+}
+
+.links-nav a::before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: var(--secndary-color);
+  transition: 0.5s transform ease;
+  transform: scale3d(0, 1, 1);
+  transform-origin: 0 50%;
+  transform-origin: 100% 50%;
+}
+
+.links-nav a:hover::before {
+  transform: scale3d(1, 1, 1);
+  transform-origin: 0 50%;
+}
+
+#first {
+  position: relative;
+  height: 92vh;
+  flex-direction: row;
+  display: flex;
+}
+
+.first-images {
+  overflow: hidden;
+}
+
+.first-img {
+  width: 40svw;
+  z-index: 2;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.first-img-second {
+  width: 15svw;
+  z-index: 1;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.first-img-third {
+  width: 15svw;
+  z-index: 1;
+  position: absolute;
+  bottom: 5svh;
+  right: 30svw;
+}
+
+.first-texts {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10%;
+}
+
+.first-texts p {
+  font-size: 1.5em;
+  font-family: "Tenor Sans", sans-serif;
+  font-weight: 600;
+}
+
+.first-texts h1 {
+  font-size: 5em;
+  font-family: "Tenor Sans", sans-serif;
+}
+
+.first-texts h2 {
+  font-size: 1.5em;
+  font-family: "Exo", sans-serif;
+}
+
+#second {
+  height: 65svh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5%;
+  position: relative;
+}
+
+.second-texts-header {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 6em;
+}
+
+.second-texts-article {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.second-texts-footer {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.second-texts-header h1 {
+  color: white;
+  font-size: 2.2em;
+  text-align: center;
+  font-family: "Tenor Sans", sans-serif;
+}
+
+.second-texts-article p {
+  color: white;
+  font-size: 1.2em;
+  text-align: justify;
+  font-family: "Tenor Sans", sans-serif;
+}
+
+.second-texts-footer p {
+  color: silver;
+  font-size: 1.2em;
+  text-align: justify;
+  font-family: "Tenor Sans", sans-serif;
+}
+
+#third {
+  height: 80svh;
+  justify-content: center;
+  display: flex;
+  position: relative;
+}
+
+.third-container {
+  background-color: white;
+  width: 80%;
+  height: 70svh;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  position: absolute;
+  top: -10em;
+  border-radius: 1em;
+  display: flex;
+}
+
+.third-container .front {
+  border-right: 1px solid rgba(192, 192, 192, 0.4);
+}
+
+.third-container .back {
+  border-left: 1px solid rgba(192, 192, 192, 0.4);
+}
+
+.third-content {
+  width: 100%;
+}
+
+.third-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3em;
+}
+
+.third-header span {
+  font-size: 5em;
+}
+
+.third-header h1 {
+  font-size: 2em;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+@media (width >= 1920px) {
+  .icon-nav a {
+    padding: 1rem;
+    font-size: 2.5em;
+    font-weight: 700;
+    font-family: "Castoro Titling", serif;
+    cursor: pointer;
+  }
+
+  .links-nav {
+    font-size: 1.2em;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    z-index: 3;
+  }
+
+  .first-texts p {
+    font-size: 2em;
+    font-family: "Tenor Sans", sans-serif;
+    font-weight: 600;
+  }
+
+  .first-texts h1 {
+    font-size: 6em;
+    font-family: "Tenor Sans", sans-serif;
+  }
+
+  .first-texts h2 {
+    font-size: 2em;
+    font-family: "Exo", sans-serif;
+  }
+}
+
+@media (width <= 1366px) {
+  .second-texts-header {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+  }
+
+  .second-texts-header h1 {
+    color: white;
+    font-size: 1.8em;
+    text-align: center;
+    font-family: "Tenor Sans", sans-serif;
+  }
+
+  .second-texts-article p {
+    color: white;
+    font-size: 1em;
+    text-align: justify;
+    font-family: "Tenor Sans", sans-serif;
+  }
+
+  .second-texts-footer p {
+    color: silver;
+    font-size: 1em;
+    text-align: justify;
+    font-family: "Tenor Sans", sans-serif;
+  }
+
+  .third-container {
+    background-color: white;
+    width: 80%;
+    height: 70svh;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    position: absolute;
+    top: -10em;
+    border-radius: 1em;
+    display: flex;
+  }
+
+  .third-header span {
+    font-size: 3.5em;
+  }
+
+  .third-header h1 {
+    font-size: 1.5em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+  }
+}
+
+@media (width <= 1280px) {
+  .second-texts-header {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+  }
+
+  .second-texts-header h1 {
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    font-family: "Tenor Sans", sans-serif;
+  }
+
+  .second-texts-article p {
+    color: white;
+    font-size: 0.8em;
+    text-align: justify;
+    font-family: "Tenor Sans", sans-serif;
+  }
+
+  .second-texts-footer p {
+    color: silver;
+    font-size: 0.8em;
+    text-align: justify;
+    font-family: "Tenor Sans", sans-serif;
+  }
+
+  .third-container {
+    background-color: white;
+    width: 80%;
+    height: 70svh;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    position: absolute;
+    top: -10em;
+    border-radius: 1em;
+    display: flex;
+  }
+
+  .third-header span {
+    font-size: 3em;
+  }
+
+  .third-header h1 {
+    font-size: 1.5em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+  }
+}
