@@ -1,21 +1,22 @@
 #Top {
-  display: none; 
-  position: fixed; 
-  bottom: 20px; 
-  right: 30px; 
-  z-index: 99; 
-  border: none; 
-  outline: none; 
-  background-color: red; 
-  color: white; 
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: rgb(25, 25, 25);
+  color: white;
   cursor: pointer;
   padding: 15px;
-  border-radius: 10px; 
-  font-size: 18px; 
+  border-radius: 10px;
+  font-size: 1.5em;
 }
 
 #Top:hover {
-  background-color: #555; 
+  background-color: rgb(55, 55, 55);
+  transition: 0.5s;
 }
 
 .icon-nav a {
@@ -174,7 +175,7 @@
 }
 
 #third {
-  height: 80svh;
+  height: 65svh;
   justify-content: center;
   display: flex;
   position: relative;
@@ -196,7 +197,7 @@
   border-right: 1px solid rgba(192, 192, 192, 0.4);
 }
 
-.third-container .back {
+.third-container .tools {
   border-left: 1px solid rgba(192, 192, 192, 0.4);
 }
 
@@ -213,19 +214,31 @@
 }
 
 .third-header span {
-  font-size: 5em;
+  font-size: 3em;
+  cursor: pointer;
 }
 
 .third-header h1 {
-  font-size: 2em;
+  font-size: 1.8em;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
+}
+
+#fourth {
+  height: 100svh;
+}
+
+.fourth-header h1 {
+  text-align: center;
+  font-size: 2.2em;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
 }
 
 @media (width >= 1920px) {
   .icon-nav a {
     padding: 1rem;
-    font-size: 2.5em;
+    font-size: 2em;
     font-weight: 700;
     font-family: "Castoro Titling", serif;
     cursor: pointer;
