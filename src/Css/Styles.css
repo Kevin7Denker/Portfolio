@@ -1,376 +1,451 @@
 #Top {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 99;
-  border: none;
-  outline: none;
-  background-color: rgb(25, 25, 25);
-  color: white;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 10px;
-  font-size: 1.5em;
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: rgb(25, 25, 25);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1.5em;
 }
 
 #Top:hover {
-  background-color: rgb(55, 55, 55);
-  transition: 0.5s;
+    background-color: rgb(55, 55, 55);
+    transition: 0.5s;
 }
 
 .icon-nav a {
-  padding: 1rem;
-  font-size: 2em;
-  font-weight: 700;
-  font-family: "Castoro Titling", serif;
-  cursor: pointer;
-}
-
-.links-nav {
-  font-size: 1em;
-  font-weight: 500;
-  cursor: pointer;
-  font-family: "Poppins", sans-serif;
-}
-
-.links-nav a {
-  color: var(--secndary-color);
-  text-transform: uppercase;
-  text-decoration: none;
-  display: block;
-  position: relative;
-  padding: 5px 0;
-}
-
-.links-nav a::before {
-  content: "";
-  width: 100%;
-  height: 2px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  background: var(--secndary-color);
-  transition: 0.5s transform ease;
-  transform: scale3d(0, 1, 1);
-  transform-origin: 0 50%;
-  transform-origin: 100% 50%;
-}
-
-.links-nav a:hover::before {
-  transform: scale3d(1, 1, 1);
-  transform-origin: 0 50%;
-}
-
-#first {
-  position: relative;
-  height: 92vh;
-  flex-direction: row;
-  display: flex;
-}
-
-.first-images {
-  overflow: hidden;
-}
-
-.first-img {
-  width: 40svw;
-  z-index: 2;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-
-.first-img-second {
-  width: 15svw;
-  z-index: 1;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-}
-
-.first-img-third {
-  width: 15svw;
-  z-index: 1;
-  position: absolute;
-  bottom: 5svh;
-  right: 30svw;
-}
-
-.first-texts {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 10%;
-}
-
-.first-texts p {
-  font-size: 1.5em;
-  font-family: "Tenor Sans", sans-serif;
-  font-weight: 600;
-}
-
-.first-texts h1 {
-  font-size: 5em;
-  font-family: "Tenor Sans", sans-serif;
-}
-
-.first-texts h2 {
-  font-size: 1.5em;
-  font-family: "Exo", sans-serif;
-}
-
-#second {
-  height: 65svh;
-  background-color: black;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 5%;
-  position: relative;
-}
-
-.second-texts-header {
-  width: 70%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 6em;
-}
-
-.second-texts-article {
-  width: 70%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.second-texts-footer {
-  width: 70%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.second-texts-header h1 {
-  color: white;
-  font-size: 2.2em;
-  text-align: center;
-  font-family: "Tenor Sans", sans-serif;
-}
-
-.second-texts-article p {
-  color: white;
-  font-size: 1.2em;
-  text-align: justify;
-  font-family: "Tenor Sans", sans-serif;
-}
-
-.second-texts-footer p {
-  color: silver;
-  font-size: 1.2em;
-  text-align: justify;
-  font-family: "Tenor Sans", sans-serif;
-}
-
-#third {
-  height: 65svh;
-  justify-content: center;
-  display: flex;
-  position: relative;
-}
-
-.third-container {
-  background-color: white;
-  width: 80%;
-  height: 70svh;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-  position: absolute;
-  top: -10em;
-  border-radius: 1em;
-  display: flex;
-}
-
-.third-container .front {
-  border-right: 1px solid rgba(192, 192, 192, 0.4);
-}
-
-.third-container .tools {
-  border-left: 1px solid rgba(192, 192, 192, 0.4);
-}
-
-.third-content {
-  width: 100%;
-}
-
-.third-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 3em;
-}
-
-.third-header span {
-  font-size: 3em;
-  cursor: pointer;
-}
-
-.third-header h1 {
-  font-size: 1.8em;
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-}
-
-#fourth {
-  height: 100svh;
-}
-
-.fourth-header h1 {
-  text-align: center;
-  font-size: 2.2em;
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-}
-
-@media (width >= 1920px) {
-  .icon-nav a {
     padding: 1rem;
     font-size: 2em;
     font-weight: 700;
     font-family: "Castoro Titling", serif;
     cursor: pointer;
-  }
+}
 
-  .links-nav {
-    font-size: 1.2em;
+.links-nav {
+    font-size: 1em;
     font-weight: 500;
     cursor: pointer;
     font-family: "Poppins", sans-serif;
-    z-index: 3;
-  }
+}
 
-  .first-texts p {
-    font-size: 2em;
+.links-nav a {
+    color: var(--secndary-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    padding: 5px 0;
+}
+
+.links-nav a::before {
+    content: "";
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: var(--secndary-color);
+    transition: 0.5s transform ease;
+    transform: scale3d(0, 1, 1);
+    transform-origin: 0 50%;
+    transform-origin: 100% 50%;
+}
+
+.links-nav a:hover::before {
+    transform: scale3d(1, 1, 1);
+    transform-origin: 0 50%;
+}
+
+#first {
+    position: relative;
+    height: 92vh;
+    flex-direction: row;
+    display: flex;
+}
+
+.first-images {
+    overflow: hidden;
+}
+
+.first-img {
+    width: 40svw;
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.first-img-second {
+    width: 15svw;
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.first-img-third {
+    width: 15svw;
+    z-index: 1;
+    position: absolute;
+    bottom: 5svh;
+    right: 30svw;
+}
+
+.first-texts {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10%;
+}
+
+.first-texts p {
+    font-size: 1.5em;
     font-family: "Tenor Sans", sans-serif;
     font-weight: 600;
-  }
+}
 
-  .first-texts h1 {
-    font-size: 6em;
+.first-texts h1 {
+    font-size: 5em;
     font-family: "Tenor Sans", sans-serif;
-  }
+}
 
-  .first-texts h2 {
-    font-size: 2em;
+.first-texts h2 {
+    font-size: 1.5em;
     font-family: "Exo", sans-serif;
-  }
+}
+
+#second {
+    height: 65svh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5%;
+    position: relative;
+    gap: 2.5rem;
+}
+
+.second-texts-header {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6em;
+}
+
+.second-texts-article {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.second-texts-footer {
+    width: 70%;
+    display: flex;
+    height: 0px;
+    align-items: center;
+    justify-content: center;
+}
+
+.second-texts-header h1 {
+    color: white;
+    font-size: 2.2em;
+    text-align: center;
+    font-family: "Tenor Sans", sans-serif;
+}
+
+.second-texts-article p {
+    color: white;
+    font-size: 1.2em;
+    text-align: justify;
+    font-family: "Tenor Sans", sans-serif;
+}
+
+.second-texts-footer p {
+    color: silver;
+    font-size: 1.2em;
+    text-align: justify;
+    font-family: "Tenor Sans", sans-serif;
+}
+
+#third {
+    height: 65svh;
+    justify-content: center;
+    display: flex;
+    position: relative;
+}
+
+.third-container {
+    background-color: white;
+    width: 80%;
+    height: 70svh;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    position: absolute;
+    top: -10em;
+    border-radius: 1em;
+    display: flex;
+}
+
+.third-container .front {
+    border-right: 1px solid rgba(192, 192, 192, 0.4);
+}
+
+.third-container .tools {
+    border-left: 1px solid rgba(192, 192, 192, 0.4);
+}
+
+.third-content {
+    width: 100%;
+}
+
+.third-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3em;
+}
+
+.third-header span {
+    font-size: 3em;
+    cursor: pointer;
+}
+
+.third-header h1 {
+    font-size: 1.8em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
+.third-footer {
+    background-color: white;
+}
+
+#fourth {
+    height: 100svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fourth-header h1 {
+    text-align: center;
+    font-size: 2.2em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+}
+
+.fourth-article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fourth-article-container {
+    width: 80svw;
+    height: 80svh;
+    margin: 2rem;
+}
+
+.fourth-container-cards {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1rem;
+}
+
+.fourth-card {
+    width: 25svw;
+    height: 38svh;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 10px;
+    gap: 1rem;
+    background-color: rgb(15, 15, 15);
+}
+
+.fourth-card-image {
+    width: 100%;
+    height: 25svh;
+    background-color: pink;
+    border-radius: 8px;
+}
+
+.fourth-card-title h1 {
+    color: white;
+}
+
+.fourth-card-description p {
+    color: darkgray;
+}
+
+.fourth-card-button {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.fourth-card-button a {
+    color: whitesmoke;
+    padding: 0.8rem;
+    background-color: grey;
+    border-radius: 5px;
+}
+
+.contacts {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+@media (width >= 1920px) {
+    .icon-nav a {
+        padding: 1rem;
+        font-size: 2em;
+        font-weight: 700;
+        font-family: "Castoro Titling", serif;
+        cursor: pointer;
+    }
+
+    .links-nav {
+        font-size: 1.2em;
+        font-weight: 500;
+        cursor: pointer;
+        font-family: "Poppins", sans-serif;
+        z-index: 3;
+    }
+
+    .first-texts p {
+        font-size: 2em;
+        font-family: "Tenor Sans", sans-serif;
+        font-weight: 600;
+    }
+
+    .first-texts h1 {
+        font-size: 6em;
+        font-family: "Tenor Sans", sans-serif;
+    }
+
+    .first-texts h2 {
+        font-size: 2em;
+        font-family: "Exo", sans-serif;
+    }
 }
 
 @media (width <= 1366px) {
-  .second-texts-header {
-    width: 70%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 4rem;
-  }
+    .second-texts-header {
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 4rem;
+    }
 
-  .second-texts-header h1 {
-    color: white;
-    font-size: 1.8em;
-    text-align: center;
-    font-family: "Tenor Sans", sans-serif;
-  }
+    .second-texts-header h1 {
+        color: white;
+        font-size: 1.8em;
+        text-align: center;
+        font-family: "Tenor Sans", sans-serif;
+    }
 
-  .second-texts-article p {
-    color: white;
-    font-size: 1em;
-    text-align: justify;
-    font-family: "Tenor Sans", sans-serif;
-  }
+    .second-texts-article p {
+        color: white;
+        font-size: 1em;
+        text-align: justify;
+        font-family: "Tenor Sans", sans-serif;
+    }
 
-  .second-texts-footer p {
-    color: silver;
-    font-size: 1em;
-    text-align: justify;
-    font-family: "Tenor Sans", sans-serif;
-  }
+    .second-texts-footer p {
+        color: silver;
+        font-size: 1em;
+        text-align: justify;
+        font-family: "Tenor Sans", sans-serif;
+    }
 
-  .third-container {
-    background-color: white;
-    width: 80%;
-    height: 70svh;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-    position: absolute;
-    top: -10em;
-    border-radius: 1em;
-    display: flex;
-  }
+    .third-container {
+        background-color: white;
+        width: 80%;
+        height: 70svh;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+            rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        position: absolute;
+        top: -10em;
+        border-radius: 1em;
+        display: flex;
+    }
 
-  .third-header span {
-    font-size: 3.5em;
-  }
+    .third-header span {
+        font-size: 3.5em;
+    }
 
-  .third-header h1 {
-    font-size: 1.5em;
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-  }
+    .third-header h1 {
+        font-size: 1.5em;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+    }
 }
 
 @media (width <= 1280px) {
-  .second-texts-header {
-    width: 70%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 3rem;
-  }
+    .second-texts-header {
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 3rem;
+    }
 
-  .second-texts-header h1 {
-    color: white;
-    font-size: 1.5em;
-    text-align: center;
-    font-family: "Tenor Sans", sans-serif;
-  }
+    .second-texts-header h1 {
+        color: white;
+        font-size: 1.5em;
+        text-align: center;
+        font-family: "Tenor Sans", sans-serif;
+    }
 
-  .second-texts-article p {
-    color: white;
-    font-size: 0.8em;
-    text-align: justify;
-    font-family: "Tenor Sans", sans-serif;
-  }
+    .second-texts-article p {
+        color: white;
+        font-size: 0.8em;
+        text-align: justify;
+        font-family: "Tenor Sans", sans-serif;
+    }
 
-  .second-texts-footer p {
-    color: silver;
-    font-size: 0.8em;
-    text-align: justify;
-    font-family: "Tenor Sans", sans-serif;
-  }
+    .second-texts-footer p {
+        color: silver;
+        font-size: 0.8em;
+        text-align: justify;
+        font-family: "Tenor Sans", sans-serif;
+    }
 
-  .third-container {
-    background-color: white;
-    width: 80%;
-    height: 70svh;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-    position: absolute;
-    top: -10em;
-    border-radius: 1em;
-    display: flex;
-  }
+    .third-container {
+        background-color: white;
+        width: 80%;
+        height: 70svh;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+            rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        position: absolute;
+        top: -10em;
+        border-radius: 1em;
+        display: flex;
+    }
 
-  .third-header span {
-    font-size: 3em;
-  }
+    .third-header span {
+        font-size: 3em;
+    }
 
-  .third-header h1 {
-    font-size: 1.5em;
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-  }
+    .third-header h1 {
+        font-size: 1.5em;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+    }
 }
