@@ -122,8 +122,8 @@
 }
 
 #second {
-  height: 65svh;
-  background-color: black;
+  height: 55svh;
+  background-color: #010208;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -176,20 +176,28 @@
   font-family: "Tenor Sans", sans-serif;
 }
 
+.second-girassol img {
+  position: absolute;
+  bottom: 0;
+  right: 2%;
+  width: 100px;
+  height: 100px;
+}
+
 #third {
   height: 65svh;
   justify-content: center;
   display: flex;
-  position: relative;
+  margin-top: 5%;
 }
 
 .third-container {
   background-color: white;
   width: 80%;
-  height: 70svh;
+  height: 45svh;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-  position: absolute;
+
   top: -10em;
   border-radius: 1em;
   display: flex;
@@ -226,8 +234,16 @@
   font-weight: 500;
 }
 
-.third-footer {
-  background-color: white;
+.third-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  margin: 1em;
+}
+
+.third-tag img {
+  border-radius: 5px;
+  margin: 0.5em;
 }
 
 #fourth {
@@ -270,7 +286,7 @@
 
 .fourth-timeline-middle {
   position: relative;
-  background-color: black;
+  background-color: #010208;
   width: 3px;
   height: 100%;
 }
@@ -282,17 +298,14 @@
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background-color: black;
+  background-color: #010208;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 
-.fourth-timeline-circle:hover {
-}
-
 .fourth-timeline-component {
   padding: 20px;
-  background: black;
+  background: #010208;
   width: 25svw;
   height: 20svh;
   border-radius: 5px;
