@@ -51,7 +51,7 @@ nav {
   flex-direction: row;
   align-items: center;
   gap: 50%;
-  height: 8svh;
+  height: 10svh;
   justify-content: space-around;
   position: relative;
 }
@@ -90,4 +90,13 @@ main {
 footer {
   height: 45svh;
   background-color: var(--secndary-color);
+}
+
+.egg-girassol img {
+  position: absolute;
+  bottom: 0;
+  transform: rotateY(180deg);
+  left: 2%;
+  width: 100px;
+  height: 100px;
 }
