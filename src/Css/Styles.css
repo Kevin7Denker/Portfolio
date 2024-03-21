@@ -83,7 +83,9 @@
 
 .first-img-second {
   width: 15svw;
+  max-width: 800px;
   z-index: 1;
+  max-width: 300px;
   position: absolute;
   right: 0;
   bottom: 0;
@@ -91,6 +93,7 @@
 
 .first-img-third {
   width: 15svw;
+  max-width: 300px;
   z-index: 1;
   position: absolute;
   bottom: 0svh;
@@ -126,7 +129,7 @@
 }
 
 .first-links-items img {
-  width: 2rem;
+  width: 2.5rem;
   margin: 1%;
   cursor: pointer;
 }
