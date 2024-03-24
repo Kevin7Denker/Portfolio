@@ -1,3 +1,8 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 #Top {
   display: none;
   position: fixed;
@@ -109,18 +114,18 @@
 }
 
 .first-texts p {
-  font-size: 1.5em;
+  font-size: 2em;
   font-family: "Tenor Sans", sans-serif;
   font-weight: 600;
 }
 
 .first-texts h1 {
-  font-size: 5em;
+  font-size: 6em;
   font-family: "Tenor Sans", sans-serif;
 }
 
 .first-texts h2 {
-  font-size: 1.5em;
+  font-size: 2em;
   font-family: "Exo", sans-serif;
 }
 
@@ -140,14 +145,13 @@
 }
 
 #second {
-  height: 65svh;
+  height: 55svh;
   background-color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 5%;
   position: relative;
-  gap: 2.5rem;
 }
 
 .second-texts-header {
@@ -155,7 +159,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 6em;
+  margin-top: 4em;
 }
 
 .second-texts-article {
@@ -164,15 +168,6 @@
   align-items: center;
   justify-content: center;
 }
-
-.second-texts-footer {
-  width: 70%;
-  display: flex;
-  height: 0px;
-  align-items: center;
-  justify-content: center;
-}
-
 .second-texts-header h1 {
   color: white;
   font-size: 2.2em;
@@ -187,23 +182,8 @@
   font-family: "Tenor Sans", sans-serif;
 }
 
-.second-texts-footer p {
-  color: silver;
-  font-size: 1.2em;
-  text-align: justify;
-  font-family: "Tenor Sans", sans-serif;
-}
-
-.second-girassol img {
-  position: absolute;
-  bottom: 0;
-  right: 2%;
-  width: 100px;
-  height: 100px;
-}
-
 #third {
-  height: 65svh;
+  height: 45svh;
   justify-content: center;
   display: flex;
   position: relative;
@@ -219,8 +199,8 @@
 
 .third-container {
   background-color: white;
-  width: 80%;
-  height: 70svh;
+  width: 80svw;
+  height: 55svh;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   position: absolute;
@@ -273,7 +253,7 @@
 }
 
 #fourth {
-  height: 85svh;
+  height: 100svh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -350,13 +330,52 @@
 }
 
 .fourth-timeline-content {
-  margin: 0px 20px 20px 20px;
+  margin: 0px 20px 20px 20px;
 }
 
-.contacts {
-  width: 100%;
-  height: 100%;
-  position: relative;
+.fourth-timeline-texts {
+  max-width: 100%;
+  max-height: 100%;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.fourth-timeline-texts h1 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.fourth-timeline-texts h2 {
+  font-size: 1rem;
+  color: lightgray;
+}
+
+.fourth-timeline-texts p {
+  font-size: 1rem;
+  color: rgb(151, 151, 151);
+}
+
+.fourth-now {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.fourth-btn-shine {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+  background: linear-gradient(to right, #4d4d4d 0, white 10%, #4d4d4d 20%);
+  background-position: 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite linear;
+  animation-fill-mode: forwards;
+  -webkit-text-size-adjust: none;
+  text-decoration: none;
+  white-space: nowrap;
 }
 
 @media (width >= 1920px) {
