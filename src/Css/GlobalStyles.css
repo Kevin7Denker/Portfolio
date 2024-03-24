@@ -2,17 +2,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Prompt:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap");
-
 @import url("https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap");
 
 :root {
   --background-color: white;
   --primary-color: #eee;
   --secndary-color: #010208;
-  --main-title: ;
-  --sub-title: ;
-  --main-text: ;
-  --sub-text: ;
 }
 
 ::-webkit-scrollbar {
@@ -32,10 +27,14 @@
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font: inherit;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
   background-color: var(--background-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 header {
@@ -84,12 +83,15 @@ section {
   padding: 0;
 }
 
-main {
-}
-
 footer {
   height: 45svh;
   background-color: var(--secndary-color);
+}
+
+.contacts {
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
 
 .egg-girassol img {
@@ -99,4 +101,16 @@ footer {
   left: 2%;
   width: 100px;
   height: 100px;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  50% {
+    background-position: 65px;
+  }
+  100% {
+    background-position: 0;
+  }
 }
