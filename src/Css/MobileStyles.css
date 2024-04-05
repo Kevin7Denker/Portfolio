@@ -248,6 +248,8 @@
     width: 100svw;
     display: flex;
     bottom: 0;
+    left: 10%;
+    transform: none;
     justify-content: center;
   }
 
@@ -266,7 +268,7 @@
     position: absolute;
     bottom: 0;
     transform: rotateY(180deg);
-    left: 0;
+    left: 5%;
     width: 50px;
     height: 50px;
   }
