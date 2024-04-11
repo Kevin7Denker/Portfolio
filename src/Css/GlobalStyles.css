@@ -7,7 +7,7 @@
 :root {
   --background-color: white;
   --primary-color: #eee;
-  --secndary-color: #010208;
+  --secundary-color: #010208;
 }
 
 ::-webkit-scrollbar {
@@ -59,7 +59,7 @@ nav {
 
 a {
   text-decoration: none;
-  color: var(--secndary-color);
+  color: var(--secundary-color);
 }
 
 ul {
@@ -88,7 +88,7 @@ section {
 footer {
   width: 100%;
   height: 45svh;
-  background-color: var(--secndary-color);
+  background-color: var(--secundary-color);
   position: relative;
 }
 
