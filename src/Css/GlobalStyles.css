@@ -154,7 +154,7 @@ footer {
 }
 
 .content {
-  width: 50%;
+  width: 100%;
   justify-content: center;
   display: flex;
   flex-direction: row;
@@ -173,8 +173,11 @@ footer {
 }
 
 .copyright {
+  width: 100%;
   display: flex;
   position: absolute;
+  align-items: center;
+  justify-content: center;
   bottom: 0;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -193,7 +196,7 @@ footer {
   position: absolute;
   bottom: 0;
   transform: rotateY(180deg);
-  left: 2%;
+  left: 0;
   width: 100px;
   height: 100px;
 }
