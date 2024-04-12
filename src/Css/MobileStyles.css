@@ -1,4 +1,4 @@
-@media (width <=768px) {
+@media (width <= 480px) {
   nav {
     display: none;
     visibility: hidden;
@@ -88,7 +88,6 @@
 
   #second {
     width: 100svw;
-    padding: 5%;
     gap: 5%;
     align-items: center;
     background-color: var(--secundary-color);
@@ -221,7 +220,126 @@
   }
 
   #fourth {
-    display: none;
+    width: 100svw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  .fourth-header h1 {
+    text-align: center;
+    font-size: 1.5em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+
+  .fourth-article {
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+  }
+
+  .fourth-timeline {
+    display: grid;
+    grid-template-columns: 1fr 0px 1fr;
+  }
+
+  .timeline-item {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+  }
+
+  .timeline-item.visible {
+    opacity: 1;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+
+  .fourth-timeline-middle {
+    position: relative;
+    background-color: black;
+    width: 3px;
+    height: 30svh;
+  }
+
+  .fourth-timeline-circle {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: black;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+  .fourth-timeline-component {
+    padding: 20px;
+    background: black;
+    width: 80svw;
+    height: 25svh;
+    border-radius: 5px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    transition: 0.4s ease;
+    overflow-wrap: break-word !important;
+    border-radius: 6px;
+    transition: ease-in-out 0.3s;
+  }
+
+  .fourth-timeline-content {
+    margin-left: 1rem;
+    margin-right: 2rem;
+  }
+
+  .fourth-timeline-texts {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .fourth-timeline-texts h1 {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .fourth-timeline-texts h2 {
+    font-size: 0.8rem;
+    color: lightgray;
+  }
+
+  .fourth-timeline-texts p {
+    font-size: 0.8rem;
+    color: rgb(151, 151, 151);
+  }
+
+  .fourth-now {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .fourth-btn-shine {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #ffffff;
+    background: linear-gradient(to right, #4d4d4d 0, white 10%, #4d4d4d 20%);
+    background-position: 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s infinite linear;
+    animation-fill-mode: forwards;
+    -webkit-text-size-adjust: none;
+    text-decoration: none;
+    white-space: nowrap;
   }
 
   .container-title h1:before {
@@ -320,9 +438,9 @@
 
   .copyright {
     display: flex;
+    width: 100%;
     bottom: 0;
-    left: 15%;
-    transform: none;
+    align-items: center;
     justify-content: center;
   }
 
@@ -333,7 +451,7 @@
   }
 
   .copyright-name {
-    color: gray !important;
+    color: gray;
     font-weight: 700;
   }
 
@@ -341,7 +459,7 @@
     position: absolute;
     bottom: 0;
     transform: rotateY(180deg);
-    left: 1%;
+    left: 0;
     width: 50px;
     height: 50px;
   }
