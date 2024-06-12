@@ -207,7 +207,7 @@
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
       rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     position: absolute;
-    top: -10em;
+    top: -5em;
     border-radius: 1em;
     display: flex;
   }
@@ -221,7 +221,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 5rem;
+    margin-top: 3rem;
   }
 
   .third-header span {
@@ -242,9 +242,10 @@
   }
 
   .third-content-dev {
-    width: 70%;
+    width: 60%;
     align-items: center;
     display: flex;
+
     flex-direction: column;
     border-right: rgb(200, 200, 200) 1px solid;
   }
@@ -258,7 +259,7 @@
     display: grid;
     grid-template-columns: auto auto auto auto auto;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1rem;
     margin-top: 3rem;
   }
 
@@ -289,7 +290,7 @@
   }
 
   .third-icons-item img {
-    width: 50px;
+    width: 30px;
   }
 
   #fourth {
@@ -353,7 +354,7 @@
     padding: 20px;
     background: black;
     width: 25svw;
-    height: 20svh;
+    height: 22svh;
     border-radius: 5px;
     color: white;
     padding: 1.75rem;
@@ -378,7 +379,7 @@
   }
 
   .fourth-timeline-texts {
-    margin-top: 5%;
+    margin-top: 2%;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
