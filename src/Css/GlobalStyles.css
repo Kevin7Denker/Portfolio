@@ -192,15 +192,6 @@ footer {
   font-weight: 700;
 }
 
-.egg-girassol img {
-  position: absolute;
-  bottom: 0;
-  transform: rotateY(180deg);
-  left: 0;
-  width: 100px;
-  height: 100px;
-}
-
 @keyframes shine {
   0% {
     background-position: 0;
