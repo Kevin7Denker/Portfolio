@@ -21,7 +21,7 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
-// -------- Timeline -------- //
+// -------- Loading -------- //
 
 function animateTimelineItems(entries, observer) {
   entries.forEach((entry) => {
@@ -31,12 +31,31 @@ function animateTimelineItems(entries, observer) {
     }
   });
 }
+
 const timelineObserver = new IntersectionObserver(animateTimelineItems, {
   threshold: 0.5,
 });
 
+const projectObserver = new IntersectionObserver(animateTimelineItems, {
+  threshold: 0.5,
+});
+
+const techObserver = new IntersectionObserver(animateTimelineItems, {
+  threshold: 0.5,
+});
+
 const timelineItems = document.querySelectorAll(".timeline-item");
+const projectItems = document.querySelectorAll(".fifth-items");
+const techItems = document.querySelectorAll(".third-container");
 
 timelineItems.forEach((item) => {
   timelineObserver.observe(item);
+});
+
+projectItems.forEach((e) => {
+  projectObserver.observe(e);
+});
+
+techItems.forEach((e) => {
+  techObserver.observe(e);
 });
