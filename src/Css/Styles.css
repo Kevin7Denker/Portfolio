@@ -363,8 +363,8 @@
   .fourth-timeline-component {
     padding: 20px;
     background: black;
-    width: 25svw;
-    height: 22svh;
+    min-width: 25svw;
+    min-height: 22svh;
     border-radius: 5px;
     color: white;
     padding: 1.75rem;
