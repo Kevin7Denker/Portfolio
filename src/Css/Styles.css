@@ -490,7 +490,7 @@
     transition: 0.5s;
   }
 
-  .fifth-items-image p {
+  .fifth-items-image p a {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -503,7 +503,7 @@
     transition: 1s;
   }
 
-  .fifth-items-image:hover p {
+  .fifth-items-image:hover p a {
     opacity: 1;
     transition: 1s;
     cursor: pointer;
@@ -1396,8 +1396,8 @@
   .fourth-timeline-component {
     padding: 20px;
     background: black;
-    width: 35svw;
-    height: 25svh;
+    min-width: 35svw;
+    min-height: 25svh;
     border-radius: 5px;
     color: white;
     padding: 1.75rem;
