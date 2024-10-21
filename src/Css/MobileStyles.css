@@ -367,7 +367,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: 5rem;
     margin: 2rem;
     margin-top: 4rem;
   }
@@ -388,12 +388,21 @@
     transform: translateY(0);
   }
 
-  .fifth-items-image {
+  .fifth-items-image.image1 {
     width: 35svw;
     height: 18svh;
     position: absolute;
     top: -2.5rem;
-    right: -2rem;
+    right: -1.5rem;
+    z-index: 2;
+  }
+
+  .fifth-items-image.image2 {
+    width: 35svw;
+    height: 18svh;
+    position: absolute;
+    top: -2.5rem;
+    left: -1.5rem;
     z-index: 2;
   }
 
@@ -434,7 +443,7 @@
   }
 
   .fifth-project-item {
-    width: 80svw;
+    width: 85svw;
     position: relative;
     height: 50svh;
     background-color: black;
