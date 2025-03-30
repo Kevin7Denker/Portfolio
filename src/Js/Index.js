@@ -59,3 +59,24 @@ projectItems.forEach((e) => {
 techItems.forEach((e) => {
   techObserver.observe(e);
 });
+
+function animateScaleItems(entries) {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.style.transform = "scale(1.1)";
+      entry.target.style.transition = "transform 0.5s ease-in-out";
+    } else {
+      entry.target.style.transform = "scale(1)";
+    }
+  });
+}
+
+const scaleObserver = new IntersectionObserver(animateScaleItems, {
+  threshold: 0.5,
+});
+
+const scaleItems = document.querySelectorAll(".scale-item");
+
+scaleItems.forEach((item) => {
+  scaleObserver.observe(item);
+});
