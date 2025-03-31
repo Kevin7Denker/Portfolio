@@ -459,6 +459,7 @@
       background-position: center;
       margin-top: 1rem;
       margin-bottom: 1rem;
+      display: flex !important;
       border-radius: 10px;
     }
 
