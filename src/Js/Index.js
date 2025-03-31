@@ -60,7 +60,13 @@ techItems.forEach((e) => {
   techObserver.observe(e);
 });
 
+// -------- Focus -------- //
+
 function animateScaleItems(entries) {
+  if (window.innerWidth <= 520) {
+    return;
+  }
+
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.style.transform = "scale(1.1)";

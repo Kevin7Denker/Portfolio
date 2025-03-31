@@ -568,9 +568,6 @@
     }
   }
 
-  .fifth-items-project {
-  }
-
   .fifth-project-item {
     width: 50svw;
     height: 60svh;
@@ -585,7 +582,6 @@
   .gees {
     background-image: url("../Assets/Images/Gees.jpg");
     background-size: cover;
-
     background-position: center;
   }
 
