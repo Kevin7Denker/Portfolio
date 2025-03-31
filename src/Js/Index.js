@@ -63,7 +63,7 @@ techItems.forEach((e) => {
 // -------- Focus -------- //
 
 function animateScaleItems(entries) {
-  if (window.innerWidth <= 520) {
+  if (window.innerWidth <= 900) {
     return;
   }
 
