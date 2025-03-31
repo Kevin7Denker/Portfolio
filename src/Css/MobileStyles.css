@@ -12,7 +12,6 @@
   #first {
     position: relative;
     height: 100svh;
-    width: 100svw;
     overflow: hidden;
   }
 
@@ -116,7 +115,7 @@
   }
 
   #second {
-    width: 100svw;
+    width: 100%;
     gap: 5%;
     align-items: center;
     background-color: var(--secundary-color);
@@ -152,7 +151,6 @@
 
   #third {
     display: flex;
-    width: 100svw;
   }
 
   .third-container {
@@ -249,7 +247,7 @@
   }
 
   #fourth {
-    width: 100svw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -388,7 +386,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100svw;
+    width: 100%;
     height: auto;
     margin-bottom: 2rem;
   }
@@ -717,7 +715,6 @@
   }
 
   footer {
-    width: 100svw;
     min-height: 60svh;
     background-color: var(--secundary-color);
     display: flex;
