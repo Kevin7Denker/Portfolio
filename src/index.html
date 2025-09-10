@@ -80,23 +80,21 @@
 
       h1 {
         color: #e5e7eb;
-        letter-spacing: 0.8em;
-        font-size: 6vw;
-        min-font-size: 1.2rem;
-        max-font-size: 2.5rem;
+        letter-spacing: 0.08em;
+        font-size: clamp(1.5rem, 8vw, 3rem);
         margin-top: 8vw;
         animation: fadeIn 3s ease-in-out infinite alternate;
         text-align: center;
+        word-break: break-word;
       }
 
       h2 {
         color: #6366f1;
-        font-size: 3vw;
-        min-font-size: 0.8rem;
-        max-font-size: 1.2rem;
-        letter-spacing: 0.3em;
+        font-size: clamp(1rem, 4vw, 2rem);
+        letter-spacing: 0.05em;
         margin-top: 2vw;
         text-align: center;
+        word-break: break-word;
       }
 
       @keyframes fadeIn {
@@ -108,27 +106,50 @@
         }
       }
 
+      @media (max-width: 900px) {
+        .planet {
+          width: 35vw;
+          height: 35vw;
+          min-width: 80px;
+          min-height: 80px;
+        }
+        .eclipse {
+          width: 60vw;
+          height: 60vw;
+          min-width: 120px;
+          min-height: 120px;
+        }
+        h1 {
+          font-size: clamp(1.2rem, 10vw, 2.2rem);
+          margin-top: 10vw;
+        }
+        h2 {
+          font-size: clamp(0.9rem, 5vw, 1.5rem);
+          margin-top: 3vw;
+        }
+      }
+
       @media (max-width: 600px) {
         .planet {
           width: 40vw;
           height: 40vw;
-          min-width: 70px;
-          min-height: 70px;
+          min-width: 60px;
+          min-height: 60px;
         }
         .eclipse {
           width: 70vw;
           height: 70vw;
-          min-width: 100px;
-          min-height: 100px;
+          min-width: 80px;
+          min-height: 80px;
         }
         h1 {
-          font-size: 8vw;
-          letter-spacing: 0.3em;
+          font-size: clamp(1rem, 12vw, 1.8rem);
+          letter-spacing: 0.03em;
           margin-top: 12vw;
         }
         h2 {
-          font-size: 4vw;
-          margin-top: 3vw;
+          font-size: clamp(0.8rem, 6vw, 1.1rem);
+          margin-top: 4vw;
         }
       }
     </style>
