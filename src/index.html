@@ -1,399 +1,97 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1">
-
-    <link rel="stylesheet" type="text/css" href="./Css/GlobalStyles.css">
-    <link rel="stylesheet" type="text/css" href="./Css/Styles.css">
-    <link rel="stylesheet" type="text/css" href="./Css/MobileStyles.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-
-    <script src="./Js/Index.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <title>Kevin Denker</title>
-</head>
-
-<body>
-
-    <header>
-        <nav>
-            <div class="icon-nav">
-                <a href="#">Denker</a>
-            </div>
-
-            <div class="navigation">
-                <ul>
-                    <li class="links-nav"><a href="#second">Sobre</a></li>
-                    <li class="links-nav"><a href="#fourth">Formação</a></li>
-                    <li class="links-nav"><a href="#fifth">Projetos</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
-    <main>
-
-        <section id="first">
-
-            <div class="first-texts">
-                <p>Olá! Eu sou</p>
-                <h1>Kevin Denker</h1>
-                <h2>Desenvolvedor Fullstack</h2>
-
-                <div class="first-links">
-                    <div class="first-links-items">
-                        <a href="https://www.linkedin.com/in/kevin-denker-573260244/" target="_blank"><img
-                                src="./Assets/Icons/linkedin.png" alt="Icone do Linkedin"></a>
-                        <a href="https://github.com/Kevin7Denker" target="_blank"><img
-                                src="./Assets/Icons/placa-do-github.png" alt="Icone do Github"></a>
-                    </div>
-                </div>
-            </div>
-
-            </div>
-            <div class="firsts-images">
-                <img class="first-img" src="./Assets/Images/BackMe.png" alt="Foto de Kevin Denker" />
-                <img class="first-img-second" src="./Assets/Images/torre.png" alt="Foto de cenário" />
-                <img class="first-img-third" src="./Assets/Images/relogio.png" alt="Foto de cenário" />
-
-            </div>
-
-
-            <button onclick="topFunction()" id="Top" title="Go to top">
-                <span class="material-symbols-outlined">
-                    arrow_upward
-                </span>
-            </button>
-        </section>
-
-        <section id="second">
-            <header class="second-texts-header">
-                <h1>Sobre Mim</h1>
-            </header>
-            <article class="second-texts-article">
-                <p>Sou formado em Técnico em Informática pelo Instituto Federal do Paraná, Campus Paranaguá, e
-                    atualmente estou cursando Análise e Desenvolvimento de Sistemas. Ao longo dos últimos cinco anos,
-                    tenho dedicado meu tempo ao estudo e aprimoramento de conhecimentos em diversos frameworks,
-                    linguagens e tecnologias relacionadas à área de desenvolvimento de software. Ao longo dessa jornada,
-                    tive a oportunidade de participar de projetos premiados e publicados em revistas internacionais,
-                    além de contribuir com artigos científicos e participar ativamente de diversas iniciativas, sempre
-                    buscando expandir meu conhecimento e evoluir profissionalmente. Atualmente, me considero um
-                    desenvolvedor fullstack, porém, estou focado em aprofundar meus conhecimentos e habilidades no
-                    desenvolvimento backend, buscando uma especialização nessa área específica.</p>
-            </article>
-
-        </section>
-
-        <section id="third" class="appear">
-
-            <div class="third-container">
-
-                <div class="third-content-dev">
-
-                    <header class="third-header">
-                        <span class="material-symbols-outlined">
-                            code
-                        </span>
-                        <h1>Skills</h1>
-                    </header>
-
-                    <article class="third-article-">
-                        <div class="third-icons-dev">
-                            <div class="third-icons-item">
-                                <img src="./Assets/Icons/react.png" alt="">
-                                <p>ReactJs</p>
-                            </div>
-                            <div class="third-icons-item">
-                                <img src="./Assets/Icons/svelte.png" alt="">
-                                <p>Svelte</p>
-                            </div>
-                            <div class="third-icons-item">
-                                <img src="./Assets/Icons/flutter.png" alt="">
-                                <p>Flutter</p>
-                            </div>
-                            <div class="third-icons-item">
-                                <img src="./Assets/Icons/java.png" alt="">
-                                <p>Java</p>
-                            </div>
-                            <div class="third-icons-item">
-                                <img src="./Assets/Icons/node.png" alt="">
-                                <p>NodeJs</p>
-                            </div>
-                            <div class="third-icons-item">
-                                <img src="./Assets/Icons/dart.png" alt="">
-                                <p>Dart</p>
-                            </div>
-                            <div class="third-icons-item">
-                                <img src="./Assets/Icons/js.png" alt="">
-                                <p>Javascript</p>
-                            </div>
-                            <div class="third-icons-item">
-                                <img src="./Assets/Icons/mongo.png" alt="">
-                                <p>Mongo</p>
-                            </div>
-                            <div class="third-icons-item">
-                                <img src="./Assets/Icons/mysql.png" alt="">
-                                <p>MySql</p>
-                            </div>
-                            <div class="third-icons-item">
-                                <img src="./Assets/Icons/c++.png" alt="">
-                                <p>C++</p>
-                            </div>
-                            <div class="third-icons-item">
-                                <img src="./Assets/Icons/ts.png" alt="">
-                                <p>Typescript</p>
-                            </div>
-                            <div class="third-icons-item">
-                                <img src="./Assets/Icons/sass.png" alt="">
-                                <p>Sass</p>
-                            </div>
-                            <div class="third-icons-item">
-                                <img src="./Assets/Icons/bootstrap.png" alt="">
-                                <p>bootstrap</p>
-                            </div>
-                        </div>
-                    </article>
-
-                </div>
-
-                <div class="third-content-tools">
-
-                    <header class="third-header">
-                        <span class="material-symbols-outlined">
-                            deployed_code_account
-                        </span>
-                        <h1>Tools</h1>
-                    </header>
-
-                    <article class="third-article">
-                        <div class="third-icons">
-                            <div class="third-icons-item">
-                                <img src="./Assets/Icons/vscode.png" alt="">
-                                <p>Visual Code</p>
-                            </div>
-                            <div class="third-icons-item">
-                                <img src="./Assets/Icons/github.png" alt="">
-                                <p>Github</p>
-                            </div>
-                            <div class="third-icons-item">
-                                <img src="./Assets/Icons/docker.png" alt="">
-                                <p>Docker</p>
-                            </div>
-                            <div class="third-icons-item">
-                                <img src="./Assets/Icons/figma.png" alt="">
-                                <p>Figma</p>
-                            </div>
-                        </div>
-                    </article>
-
-                </div>
-            </div>
-
-        </section>
-        <section id="fourth">
-
-            <header class="fourth-header">
-                <h1>Formação Acadêmica</h1>
-            </header>
-
-            <article class="fourth-article">
-
-                <div class="fourth-timeline">
-
-                    <div class="fourth-timeline-empty"></div>
-
-                    <div class="fourth-timeline-middle">
-                        <div class="fourth-timeline-circle"></div>
-                    </div>
-
-                    <div class="fourth-timeline-component fourth-timeline-content timeline-item">
-                        <div class="fourth-timeline-texts">
-                            <h1>Análise e Desenvolvimento de Sistemas</h1>
-                            <h2>Instituto Federal do Paraná, Paranaguá</h2>
-                            <div class="fourth-now">
-                                <p>02/2024 - 12/2026</p>
-                                <p class="fourth-btn-shine">Cursando</p>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="fourth-timeline-empty-mobile"></div>
-                    <div class="fourth-timeline-component fourth-timeline-content timeline-item">
-                        <div class="fourth-timeline-texts">
-                            <h1>Técnico em Informática </h1>
-                            <h2>Instituto Federal do Paraná, Paranaguá</h2>
-                            <p>02/2020 - 12/2023</p>
-                        </div>
-                    </div>
-
-                    <div class="fourth-timeline-middle">
-                        <div class="fourth-timeline-circle"></div>
-                    </div>
-
-                </div>
-
-            </article>
-
-        </section>
-
-        <section id="fifth">
-
-            <header class="fifth-header">
-                <h1>Projetos</h1>
-            </header>
-
-            <article class="fifth-article">
-
-                <div class="fifth-content">
-
-                    <div class="fifth-items">
-
-                        <div class="fifth-items-text scale-item">
-
-                            <img style="display: none;" src="../src/Assets/Images/Apolo.png"/>
-
-                            <h1>Apolo</h1>
-
-                            <h2>Em andamento...</h2>
-
-                            <p>
-                                Imagine uma rede social feita para amantes da música! O Apolo é um aplicativo inovador
-                                que permite avaliar músicas, criar playlists e descobrir novos sons com base nas
-                                opiniões de outros usuários. Integrado à API do Spotify, ele oferece um feed interativo,
-                                onde você acompanha recomendações e críticas musicais de amigos e especialistas.
-                                Queremos transformar a maneira como as pessoas interagem com a música, tornando a
-                                experiência mais compartilhável, interativa e personalizada.
-                            </p>
-
-                            <div class="fifth-links">
-                                <p>Repositório:</p>
-                                <a class="links" href="https://github.com/Kevin7Denker/Apolo"
-                                    target="_blank">github.com/Kevin7Denker/Apolo</a>
-                            </div>
-
-                            <div class="fifth-links">
-                                <p>Documentação:</p>
-                                <a class="links" href="https://apolo.kvdenker.com"
-                                    target="_blank">apolo.kvdenker.com</a>
-                            </div>
-
-                        </div>
-
-                        <div class="fifth-items-project">
-                            <div class="fifth-project-item apolo"></div>
-                        </div>
-
-                    </div>
-
-                    <div class="fifth-items">
-
-                        <div class="fifth-items-project">
-                            <div class="fifth-project-item gees">
-
-                            </div>
-                        </div>
-
-                        <div class="fifth-items-text scale-item">
-
-                            <img style="display: none;" src="../src/Assets/Images/Gees.jpg"/>
-
-                            <h1>Gee's</h1>
-
-                            <h2>Amostrador de Gases de Efeito Estufa.</h2>
-
-                            <p>
-                                Você sabia que a emissão de metano é um dos principais desafios ambientais atuais?
-                                Desenvolvemos um amostrador portátil, de baixo custo e fácil operação para medir gases
-                                de efeito estufa, com foco no metano. Utilizando sensores modernos e a plataforma ESP32,
-                                nosso dispositivo permite monitoramento preciso, armazenamento online de dados e acesso
-                                imediato às informações.
-
-                                Testamos o protótipo com diferentes resíduos orgânicos e os resultados comprovaram sua
-                                eficiência na detecção de variações nas emissões. Com essa inovação, tornamos a análise
-                                ambiental mais acessível e eficiente. 
-
-
-                            </p>
-
-                            <div class="fifth-links">
-                                <p>Repositório:</p>
-                                <a class="links" href="https:/github.com/Kevin7Denker/GEE-S"
-                                    target="_blank">github.com/Kevin7Denker/GEE-S</a>
-                            </div>
-
-                            <div class="fifth-links">
-                                <p>Produção:</p>
-                                <a class="links" href="./Assets/Docs/Documento-GEES.pdf"
-                                    target="_blank">Documentação</a>
-                            </div>
-                        </div>
-
-                    </div>
-
-
-                    <div class="fifth-more fancy">
-                        <a href="">
-                            <span class="top-key"></span>
-                            <span class="text">Ver mais</span>
-                            <span class="bottom-key-1"></span>
-                            <span class="bottom-key-2"></span>
-                        </a>
-                    </div>
-
-                </div>
-
-            </article>
-
-        </section>
-
-    </main>
-
-    <footer>
-        <div class="contacts">
-            <div class="container">
-                <div class="container-title">
-                    <h1>Fale Comigo</h1>
-                </div>
-                <div class="content">
-                    <div class="content-localization">
-                        <p>Matinhos, Paraná, Brasil.</p>
-                        <div class="links">
-                            <a href="https://www.linkedin.com/in/kevin-denker-573260244/" target="_blank"><img
-                                    src="./Assets/Icons/linkedin.png" alt="Icone do Linkedin"></a>
-                            <a href="https://github.com/Kevin7Denker" target="_blank"><img
-                                    src="./Assets/Icons/placa-do-github.png" alt="Icone do Github"></a>
-                        </div>
-                    </div>
-                    <div class="content-contact">
-                        <a href="   mailto:oficialdenker@gmail.com">
-                            <p>oficialdenker@gmail.com</p>
-                        </a>
-                        <a href="tel:41995287738">
-                            <p>41 99528-7728</p>
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="copyright">
-                <h1>Copyright © 2025</h1>
-                <h1 class="copyright-name">Kevin Denker da Silva</h1>
-                <h1>. Todos os direitos reservados.</h1>
-            </div>
-        </div>
-
-    </footer>
-</body>
-
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coming Soon</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        flex-direction: column;
+        font-family: "Arial", sans-serif;
+        overflow: hidden;
+      }
+
+      .planet {
+        position: absolute;
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        background: radial-gradient(
+          circle at 60% 40%,
+          #7dd3fc 0%,
+          #2563eb 60%,
+          #1e293b 100%
+        );
+        top: 50%;
+        left: 50%;
+        transform: translate(-60%, -60%) scale(1.2);
+        z-index: 0;
+        box-shadow: 0 0 60px 20px #2563eb55;
+        animation: planet-move 10s ease-in-out infinite alternate;
+      }
+
+      .eclipse {
+        position: relative;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        background: radial-gradient(
+          circle at center,
+          rgba(40, 60, 255, 0.8) 0%,
+          rgba(40, 60, 255, 0.2) 40%,
+          transparent 70%
+        );
+        animation: pulse 4s ease-in-out infinite;
+        z-index: 1;
+      }
+
+      .eclipse::after {
+        content: "";
+        position: absolute;
+        width: 280px;
+        height: 280px;
+        background: #000;
+        border-radius: 50%;
+        top: 10px;
+        left: 10px;
+      }
+
+      h1 {
+        color: #e5e7eb;
+        letter-spacing: 20px;
+        font-size: 2rem;
+        margin-top: 50px;
+        animation: fadeIn 3s ease-in-out infinite alternate;
+      }
+
+      h2 {
+        color: #6366f1;
+        font-size: 0.9rem;
+        letter-spacing: 5px;
+        margin-top: 10px;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0.4;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="planet"></div>
+    <div class="eclipse"></div>
+    <h1>COMING SOON</h1>
+    <h2>DENKER</h2>
+  </body>
 </html>
